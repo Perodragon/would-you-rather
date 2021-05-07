@@ -1,0 +1,418 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: visible;
+  width: 1280px; 
+  height: 960px;
+  justify-content: center;
+}
+
+/* Reference : 
+            Reszie Css Propert Flaw           
+        Link :
+          [ https://stackoverflow.com/questions/41581519/how-to-keep-default-page-size-of-my-site-while-resizing-browser ] */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.minImg {
+  width: 100px;
+  height: 100px;
+}
+
+.mainTheme {
+  color: rgb(241, 9, 144);
+  font-weight: 1000;
+  text-shadow: 2px 3px black;
+  font-size: 35px;
+  margin-left: 10px;
+  padding-left: 20px;
+  padding-top: -2px;
+  font-style: italic;
+}
+
+.mainTheme:hover {
+  color: rgb(0, 255, 42);
+  cursor: grab;
+}
+
+.nav {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-style: italic;
+  font-weight: bolder;
+  white-space: nowrap;
+}
+
+.custom-nav-bg {
+  max-width: 100%;
+}
+
+.NavContainer {
+  width: 100%;
+  height: 50%;
+  min-width: 960px;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+
+.nav li {
+  padding-top: 9%;
+  display: inline;
+}
+
+.authedUser {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  padding: 30px;
+  white-space: nowrap;
+  justify-content: flex-start;
+  margin-right: 200;
+  float: right;
+  margin-top: 0%;
+}
+
+.nav li:first-child {
+  padding-left: 25px;  
+}
+
+.welcomeMsg{
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  padding-top: 30px;
+  text-decoration: none;
+  color: #00ced1 !important;
+}
+
+.nav li a {
+  color: rgb(58, 55, 55) !important;
+}
+
+.nav li a:hover  {
+  color: rgb(206, 9, 9) !important;
+}
+
+nav .welcomeMsg {
+  float: right;
+  color: rgb(0, 0, 0) !important;
+  font-weight: 600;
+  margin-right: 30%;
+  margin-top: 3%;
+  margin-bottom: 0px;
+  padding: 20px;
+}
+
+nav .loginBtn {
+  font-size: 20px !important;
+  margin-right: 100%;
+  margin-top: -20%;
+  font-weight: bolder;
+  font-size: 37px;
+  color: hsl(325, 93%, 49%);
+}
+
+nav .minImg {
+  margin-left: 10%;
+  margin-top: -4%;
+}
+
+nav .welcomeMsg a {
+  color: hsl(325, 93%, 49%);
+  font-size: 15px;
+  margin-left: 5%; 
+  font-weight: bold; 
+}
+
+#userPfp {
+  height: 63%;
+  width: 63%;
+  object-fit: cover;
+}
+
+.styleContainer {
+  margin: auto;
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family:cursive;
+}
+
+.selectOptions {
+  width: 70%;
+  height: 50px;
+  text-align-last: center;
+  margin-top: 50px;
+}
+
+input[type='text'] {
+  width: 94%;
+  height: 10%;
+  margin-bottom: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  font-family:cursive;
+}
+
+.avt {
+  height: 200px;
+  float: left;
+  padding-bottom: 2%;
+}
+
+.questionDetails {
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 3%;
+  display: inline-block;
+  width: 90%;
+}
+
+.questionDetails img {
+  margin: auto;
+  padding-top: 26px;
+  padding-left: 3px;
+}
+
+.questionDetails h6 {
+  float: left;  
+  padding-top: 3%;
+  padding-left: 1px;
+}
+
+.questionDetails .starter {  
+  padding-top: 4%;
+  font-weight: 900;
+  color: rgb(209, 0, 63);
+  font-style: italic;
+  margin: auto;
+}
+
+.questionDetails p {
+  padding-left: 10%;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.questionDetails button {
+  margin-bottom: 2%;
+}
+
+.ports {
+  display: flex;
+  flex-direction: row;
+  font-style: italic;
+  font-family: cursive;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+
+.questionport {
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 20px;
+  width: 90%;
+  cursor: pointer;
+}
+
+.port {
+  background-color: hsl(330, 100%, 50%);
+  color: white;
+  font-weight: bold;
+}
+
+.viewQuestion {
+  margin-bottom: 1%;
+}
+
+.checkboardVs {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboardVs img {
+  margin: auto;
+  padding-top: 20px;
+  padding-left: 3px;
+}
+
+.userboard {
+  border: 3px solid #00000033;
+  margin-bottom: 2%;
+  display: inline-block;
+  width: 90%;
+  font-weight: bold;
+  color: red;
+}
+
+.userboard h2 {
+  padding-top: 2%;
+  color: rgb(209, 0, 63);
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.userboard p {
+  font-weight: lighter;
+  color: black;
+}
+
+.scoreboard {
+  color: red;
+  font-size: 18px;
+  align-content: space-around;
+}
+
+.submitBtn {
+  margin-top: 2%;
+}
+
+.vote {
+  text-align: left;
+  margin-left: 35%;
+  margin-bottom: 2%;
+  width: 90%;
+}
+
+.questionVote {
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  margin: 3%;
+  display: inline-block;
+  width: 94%;
+}
+
+.questionVote img {
+  margin: auto;
+  padding-top: 50px;
+  padding-left: 7px;
+}
+
+.questionVote h6 {
+  float: left;  
+  padding-top: 3%;
+  padding-left: 1px;
+}
+
+.questionVote .starterVt {  
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-bottom: 1%;
+  font-weight: 900;
+  color: rgb(209, 0, 63);
+  font-style: italic;
+  margin: auto;  
+}
+
+.questionVote p {
+  padding-left: 10%;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+input[type='radio'] {
+  
+  margin-bottom: 1.2%;
+  margin-bottom: 1.2%;
+
+  padding-top: 0%;
+  padding-bottom: 0%;
+  text-align: center;
+  font-family:cursive;
+}
+
+.errContainer {
+  align-content: center;
+  margin-top: 10%;
+  border: 3px solid rgb(209, 0, 63);
+  margin-bottom: 2%;
+  display: inline-block;
+  width: 100%;
+  padding: 7px;
+  margin-left: 10px;
+  font-family: cursive;
+}
+
+.progress-bar {
+  background-color: rgb(209, 0, 63);
+  width: 70%;
+}
+
+.res {
+  font-size: 18px !important;
+  color: rgb(255, 46, 109);
+}
+
+.voteDisplay {
+  width:92%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.voteDisplay p{ 
+  padding-left: 0%;
+}
+
+.voteDisplay h5{ 
+  font-size: small;
+  font-family: cursive;
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(200, 35, 241);
+  
+}
+
+.voteTitle {
+  padding-top: 22px ;
+  float: left;
+  text-decoration: wavy;
+  font-style: italic;
+  font-size: 60px;
+  color: rgb(241, 35, 97);
+  font-weight: 1000;
+  text-shadow: 1px 1px black;
+  padding-right: 30px;
+  margin-right: 3%;
+}
+
+.rather{
+  padding-top: 4%;
+  font-weight: 900;
+  color: rgb(209, 0, 63);
+  font-style: italic;
+  margin: auto;
+  padding-left: 3%;
+}
